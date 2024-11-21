@@ -39,11 +39,9 @@
 
     <!-- Header Section -->
     <header class="jumbotron jumbotron-fluid text-center text-white d-flex align-items-center" style="
-        background-color: #12171e;
-        height: 250px;
-        padding-top: 90px;
-        padding-bottom: 30px;
-      ">
+background-color: #12171e;
+padding: 120px 0 30px; /* Adjust padding to create more flexibility */
+">
         <div class="container">
             <h1 class="display-4">Welcome to My Professional Portfolio</h1>
             <p class="lead">Explore my skills, projects, and more!</p>
@@ -54,36 +52,45 @@
     <section id="introduction" class="container my-5 text-light">
         <h2 class="text-left font-weight-bold mb-4">Introduction</h2>
         <hr class="my-4" style="border: 2px solid #fff; opacity: 0.7" />
-        <div class="row align-items-center">
-            <div class="col-md-4 text-center" style="margin-top: -500px">
+
+        <!-- Profile Image Section - Positioned between Title and Name -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-4 text-center">
                 <img src="assets/profile.png" alt="Your Photo" class="profile-img rounded-circle shadow"
                     id="profileImage" data-toggle="modal" data-target="#profileModal" />
             </div>
+        </div>
 
-            <!-- Modal for Profile Image -->
-            <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="profileModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content" style="background-color: #1f2833">
-                        <div class="modal-header">
-                            <h5 class="modal-title text-light" id="profileModalLabel">Profile Picture</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body text-center">
-                            <img src="assets/profile.png" alt="Profile Picture" class="img-fluid" />
-                        </div>
+        <!-- Modal for Profile Image -->
+        <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="profileModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" style="background-color: #1f2833">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-light" id="profileModalLabel">Profile Picture</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="assets/profile.png" alt="Profile Picture" class="img-fluid" />
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="col-md-8">
+        <!-- Profile Information Section -->
+        <div class="row justify-content-center mb-4"> <!-- Added margin-bottom for spacing -->
+            <div class="col-md-8 text-center"> <!-- Center the text for name, email, and location -->
                 <h3 class="font-weight-bold">Thomas Joseph Almorin</h3>
                 <p>thomasjoseph.almorin@edu.tup.ph</p>
                 <p>Caloocan City, Philippines</p>
+            </div>
+        </div>
 
-                <!-- Objectives Section -->
+        <!-- Objectives Section -->
+        <div class="row">
+            <div class="col-md-8" style="margin-right: 20px;"> <!-- Adjust right margin -->
                 <h4>Objectives</h4>
                 <p>
                     I am a motivated BS Information Systems student eager to expand my
@@ -93,8 +100,12 @@
                     creating user-friendly and impactful systems for businesses and the
                     environment.
                 </p>
+            </div>
+        </div>
 
-                <!-- Education Section -->
+        <!-- Education Section (Unchanged) -->
+        <div class="row">
+            <div class="col-md-8">
                 <h4>Education</h4>
                 <p class="font-weight-bold">(2022 - Present)</p>
                 <p>Technological University of the Philippines - Manila</p>
@@ -119,6 +130,8 @@
             </div>
         </div>
     </section>
+
+
 
     <!-- Skills Section -->
     <section id="skills" class="container my-5 text-light">
