@@ -27,3 +27,10 @@ This repository contains the code for Thomas' Portfolio Website, which showcases
 1. Clone this repository to your local machine:
    ```bash
    git clone https://github.com/your-username/portfolio-website.git
+
+2. Open the index.html file in a web browser to view the portfolio.
+File Structure
+- index.html: Main HTML file containing the structure of the portfolio.
+- styles.css: Custom CSS for styling the website.
+- assets/: Folder containing images, icons, and project screenshots.
+- README.md: This file.
