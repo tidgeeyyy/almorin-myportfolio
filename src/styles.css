@@ -1,10 +1,10 @@
 /* Base Styling */
 html body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url('assets/deer teal.png'); /* image background */
+    background-image: url('assets/deer teal.png'); 
     background-size: cover; 
     background-position: center; 
-    color: #C5C6C7; /* font color for general text */
+    color: #C5C6C7; 
     margin: 0;
     padding: 0;
 }
@@ -45,27 +45,25 @@ header p {
     color: #C5C6C7;
 }
 
-/* Resume Section */
-#resume {
+/* Introduction Section */
+#introduction {
     background-color: #1F2833; 
     color: #C5C6C7; 
     padding: 30px; 
     border-radius: 10px; 
 }
 
-#resume h2, #blog h2 {
+#introduction h2, #projects h2 {
     color: #66FCF1; 
 }
 
-#resume h3, #resume p, #blog .card-title, #blog .card-text {
+#introduction h3, #introduction p, #projects .card-title, #projects .card-text {
     color: #66FCF1;
 }
 
-#resume ul li, #blog .card-body p {
+#introduction ul li, #projects .card-body p {
     color: #C5C6C7;
 }
-
-
 
 /* Profile Image */
 .profile-img {
@@ -76,42 +74,48 @@ header p {
     object-fit: cover;
 }
 
-/* Blog Section */
-#blog .card {
+/* Projects Section */
+#projects .card {
     background-color: #1F2833;
     color: #C5C6C7;
     border: none;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100%;
 }
 
-#blog .card-title {
+#projects .card-img-top {
+    object-fit: cover; 
+    width: 100%; 
+    height: 200px; /* Set a fixed height for uniformity */
+}
+
+#projects .card-body {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#projects .card-title {
     color: #66FCF1;
 }
 
-#blog .card-text {
+#projects .card-text {
     color: #C5C6C7;
 }
 
-#blog .btn-outline-primary {
+#projects .btn-outline-primary {
     color: #66FCF1;
     border-color: #66FCF1;
 }
 
-#blog .btn-outline-primary:hover {
+#projects .btn-outline-primary:hover {
     background-color: #66FCF1;
     color: #0B0C10;
-}
-
-/* Gallery Section */
-#gallery .card-img-top {
-    object-fit: cover;
-    height: 200px; 
-    transition: transform 0.3s ease;
-}
-
-#gallery .card:hover .card-img-top {
-    transform: scale(1.05); 
 }
 
 /* Contact Me Section */
@@ -154,7 +158,7 @@ header p {
 }
 
 #contact button:hover {
-    background-color: #66FCF1; /* Hover effect */
+    background-color: #66FCF1;
     color: #333739;
 }
 
@@ -170,6 +174,39 @@ header p {
 #contact #clearBtn:hover {
     background-color: #FF2D2D; 
 }
+
+/* Social Media Icons */
+#social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+#social-icons .social-icon img {
+    width: 40px; 
+    height: 40px;
+    object-fit: contain; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#social-icons .social-icon:hover img {
+    transform: scale(1.1); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+/* Add responsiveness for small screens */
+@media (max-width: 768px) {
+    #social-icons {
+        gap: 10px;
+    }
+
+    #social-icons .social-icon img {
+        width: 35px; 
+        height: 35px;
+    }
+}
+
 
 /* Modal */
 .modal-content {
@@ -202,9 +239,34 @@ footer {
     transition: transform 0.3s ease-in-out;
 }
 
+/* Hover effect on the profile image */
+#profileImage {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#profileImage:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+}
+
+
+/* Modal Image Full View */
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+}
+
 .navbar-toggler-icon {
     background-color: #66FCF1;
 }
+
+#backToTop {
+    background: #007bff; 
+}
+#backToTop:hover {
+    background: #0056b3;
+}
+
 
 /* Other Utility Classes */
 .container {

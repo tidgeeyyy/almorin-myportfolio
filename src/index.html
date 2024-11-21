@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thomas's Resume & Blog</title>
+    <title>Thomas' Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -12,27 +12,30 @@
 </head>
 
 <body>
- <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-dark shadow-sm fixed-top">
-    <a class="navbar-brand font-weight-bold text-light" href="#">Thomas’ Insight Hub</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark shadow-sm fixed-top">
+        <a class="navbar-brand font-weight-bold text-light" href="#">Thomas’ Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link text-light" href="#resume">Resume</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-light" href="#blog">Blog</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-light" href="#contact">Contact Me</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#introduction">Introduction</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Header Section -->
     <header class="jumbotron jumbotron-fluid text-center text-white d-flex align-items-center" style="
@@ -42,30 +45,43 @@
         padding-bottom: 30px;
       ">
         <div class="container">
-            <h1 class="display-4">Welcome to My Hub</h1>
-            <p class="lead">Explore my journey, skills, and passions.</p>
+            <h1 class="display-4">Welcome to My Professional Portfolio</h1>
+            <p class="lead">Explore my skills, projects, and more!</p>
         </div>
     </header>
 
-    <!-- Resume Section -->
-    <section id="resume" class="container my-5 text-light">
-        <h2 class="text-left font-weight-bold mb-4">Resume</h2>
+    <!-- Introduction Section -->
+    <section id="introduction" class="container my-5 text-light">
+        <h2 class="text-left font-weight-bold mb-4">Introduction</h2>
         <hr class="my-4" style="border: 2px solid #fff; opacity: 0.7" />
-        <!-- This will make the line thicker and more visible -->
         <div class="row align-items-center">
-            <div class="col-md-4 text-center" style="margin-top: -100px">
-                <!-- Adjust this value to control the height -->
-                <!-- Updated the src attribute to point to your profile picture in the assets folder -->
-                <img src="assets/profile.png" alt="Your Photo" class="profile-img rounded-circle shadow" />
+            <div class="col-md-4 text-center" style="margin-top: -500px">
+                <img src="assets/profile.png" alt="Your Photo" class="profile-img rounded-circle shadow"
+                    id="profileImage" data-toggle="modal" data-target="#profileModal" />
             </div>
+
+            <!-- Modal for Profile Image -->
+            <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="profileModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content" style="background-color: #1f2833">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-light" id="profileModalLabel">Profile Picture</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="assets/profile.png" alt="Profile Picture" class="img-fluid" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="col-md-8">
                 <h3 class="font-weight-bold">Thomas Joseph Almorin</h3>
-                <p>
-                    thomasjoseph.almorin@edu.tup.com
-                </p>
-                <p>
-                   Caloocan City, Philippines
-                </p>
+                <p>thomasjoseph.almorin@edu.tup.ph</p>
+                <p>Caloocan City, Philippines</p>
 
                 <!-- Objectives Section -->
                 <h4>Objectives</h4>
@@ -80,61 +96,88 @@
 
                 <!-- Education Section -->
                 <h4>Education</h4>
-                <p>Bachelor's Degree in Information Systems (Ongoing)</p>
-
-                <!-- Skills Section -->
-                <h4>Skills</h4>
+                <p class="font-weight-bold">(2022 - Present)</p>
+                <p>Technological University of the Philippines - Manila</p>
                 <ul>
-                    <li>Web Development: HTML, CSS, JavaScript, Bootstrap</li>
-                    <li>Business Intelligence: Data analysis, Power BI</li>
-                    <li>Project Management and Collaboration</li>
+                    <li>Bachelor of Science in Information Systems</li>
+                    <li>Dean's Lister: 2023 - 2024</li>
                 </ul>
 
-                <!-- Projects Section -->
-                <h4>Projects</h4>
+                <p class="font-weight-bold">(2020 - 2022)</p>
+                <p>Caloocan City Science High School</p>
                 <ul>
-                    <li>Word By Word (2023)</li>
-                    <li>ATM Simulation (2023)</li>
-                    <li>Text Compressor and Decompressor (2023)</li>
+                    <li>Received an Upper Secondary Education Diploma</li>
+                    <li>Graduated with High Honors</li>
+                </ul>
+
+                <p class="font-weight-bold">(2016 - 2020)</p>
+                <p>Caloocan High School</p>
+                <ul>
+                    <li>Received a Secondary Education Diploma</li>
+                    <li>Graduated with Honors</li>
                 </ul>
             </div>
         </div>
     </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="container my-5 text-light">
+        <h2 class="text-left font-weight-bold mb-4">Skills</h2>
+        <hr class="my-4" style="border: 2px solid #fff; opacity: 0.7;" />
+        <div class="mb-4">
+            <p class="mb-3 font-weight-bold">Programming Languages/Tools I use:</p>
+            <div class="d-flex flex-wrap gap-3">
+                <img src="assets/tools/c.jpg" alt="C" width="50" />
+                <img src="assets/tools/c++.jpg" alt="C++" width="50" />
+                <img src="assets/tools/java.jpg" alt="Java" width="50" />
+                <img src="assets/tools/netbeans.jpg" alt="NetBeans" width="50" />
+                <img src="assets/tools/mysql.jpg" alt="MySQL" width="50" />
+                <img src="assets/tools/html.jpg" alt="HTML" width="50" />
+                <img src="assets/tools/css.jpg" alt="CSS" width="50" />
+                <img src="assets/tools/vscode.jpg" alt="VSCode" width="50" />
+                <img src="assets/tools/linux.jpg" alt="Linux" width="50" />
+                <img src="assets/tools/virtualbox.jpg" alt="VirtualBox" width="50" />
+                <img src="assets/tools/diagrams.jpg" alt="Diagrams.io" width="50" />
+                <img src="assets/tools/figma.jpg" alt="Figma" width="50" />
+                <img src="assets/tools/git.jpg" alt="Git" width="50" />
+            </div>
+        </div>
+
+        <div>
+            <p><strong>Beginner:</strong> HTML, CSS, Visual Studio Code, Git, Linux, VirtualBox</p>
+            <p><strong>Intermediate:</strong> C/C++, Java, NetBeans, MySQL, Diagrams.io</p>
+            <p><strong>Advanced:</strong> Figma</p>
+        </div>
+    </section>
+
+
+
     <!-- Projects Section -->
-    <section id="blog" class="container my-5 text-light">
-        <h2 class="text-left font-weight-bold mb-4">Blogs</h2>
+    <section id="projects" class="container my-5 text-light">
+        <h2 class="text-left font-weight-bold mb-4">Projects</h2>
         <hr class="my-4" style="border: 2px solid #fff; opacity: 0.7" />
-        <!-- Visible line added here -->
         <div class="row">
+            <!-- Word By Word (2023) -->
             <div class="col-md-4 mb-4">
                 <div class="card shadow border-0 hover-zoom">
-                    <!-- Replace the placeholder link with your college.png -->
-                    <img src="assets/college.png" class="card-img-top" alt="College Life" />
+                    <img src="assets/projects/proj1.jpg" class="card-img-top" alt="Word By Word" />
                     <div class="card-body" style="background-color: #1f2833">
-                        <h5 class="card-title font-weight-bold">
-                            My Life as a College Student
-                        </h5>
-                        <p class="card-text">
-                            From adjusting to university life to balancing academics, this
-                            blog is about my personal experiences and growth as a college
-                            student.
-                        </p>
-                        <button class="btn btn-outline-info btn-sm" data-toggle="modal" data-target="#modalCollegeLife">
+                        <h5 class="card-title font-weight-bold">Word By Word (2023)</h5>
+                        <button class="btn btn-outline-info btn-sm" data-toggle="modal" data-target="#modalWordByWord">
                             Read More
                         </button>
                     </div>
                 </div>
             </div>
 
-            <!-- Modal for "My Life as a College Student" -->
-            <div class="modal fade" id="modalCollegeLife" tabindex="-1" role="dialog"
-                aria-labelledby="modalCollegeLifeLabel" aria-hidden="true">
+            <!-- Modal for "Word By Word (2023)" -->
+            <div class="modal fade" id="modalWordByWord" tabindex="-1" role="dialog"
+                aria-labelledby="modalWordByWordLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content" style="background-color: #1f2833">
                         <div class="modal-header">
-                            <h5 class="modal-title text-light" id="modalCollegeLifeLabel">
-                                My Life as a College Student
+                            <h5 class="modal-title text-light" id="modalWordByWordLabel">
+                                Word By Word (2023)
                             </h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
@@ -142,83 +185,61 @@
                         </div>
                         <div class="modal-body text-light">
                             <p>
-                               write here
+                                <strong>Word By Word</strong> is an interactive two-player game built using C
+                                programming.
+                                The game is designed to test players' memory and recall abilities by presenting words
+                                one by one
+                                to form a complete sentence. Players must memorize and reproduce the sentence correctly
+                                to
+                                progress to the next level. The game increases in difficulty as the levels advance,
+                                encouraging
+                                players to improve their focus and cognitive skills.
                             </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card shadow border-0 hover-zoom">
-                    <!-- Use the correct path for the gaming.png image -->
-                    <img src="assets/gaming.png" class="card-img-top" alt="Gaming" />
-                    <div class="card-body" style="background-color: #1f2833">
-                        <h5 class="card-title font-weight-bold">
-                            Favorite Hobby: Gaming
-                        </h5>
-                        <p class="card-text">
-                            Gaming has been a passion of mine, offering both relaxation and
-                            challenge. Check out my favorite games and experiences!
-                        </p>
-                        <button class="btn btn-outline-info btn-sm" data-toggle="modal" data-target="#modalGaming">
-                            Read More
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Modal for "Gaming" -->
-            <div class="modal fade" id="modalGaming" tabindex="-1" role="dialog" aria-labelledby="modalGamingLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content" style="background-color: #1f2833">
-                        <div class="modal-header">
-                            <h5 class="modal-title text-light" id="modalGamingLabel">
-                                Favorite Hobby: Gaming
-                            </h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body text-light">
                             <p>
-                               write here
+                                The program offers a simple yet engaging gameplay experience, making it a great tool for
+                                both
+                                entertainment and mental exercise. The game's structure highlights the fundamental
+                                programming
+                                concepts, including loops, arrays, and conditional statements, which were applied during
+                                its
+                                development as part of a group final project for Computer Programming 1. The project
+                                demonstrates
+                                teamwork, problem-solving skills, and a strong grasp of introductory programming
+                                principles.
                             </p>
-                            
+                            <p>
+                                Repository:
+                                <a href="https://github.com/tidgeeyyy/word_by_word" target="_blank"
+                                    style="color: #66FCF1;">https://github.com/tidgeeyyy/word_by_word</a>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
 
+
+            <!-- ATM Simulation (2023) -->
             <div class="col-md-4 mb-4">
                 <div class="card shadow border-0 hover-zoom">
-                    <!-- Use the correct path for the military.png image -->
-                    <img src="assets/military.png" class="card-img-top" alt="Military Enthusiasm" />
+                    <img src="assets/projects/proj2.jpg" class="card-img-top" alt="ATM Simulation" />
                     <div class="card-body" style="background-color: #1f2833">
-                        <h5 class="card-title font-weight-bold">
-                            Military Enthusiast
-                        </h5>
-                        <p class="card-text">
-                            I enjoy exploring and learning about cutting-edge advanced
-                            military technology. Let's talk about the latest developments!
-                        </p>
+                        <h5 class="card-title font-weight-bold">ATM Simulation (2023)</h5>
                         <button class="btn btn-outline-info btn-sm" data-toggle="modal"
-                            data-target="#modalMilitaryHardware">
+                            data-target="#modalATMSimulation">
                             Read More
                         </button>
                     </div>
                 </div>
             </div>
 
-            <!-- Modal for "Military Hardware" -->
-            <div class="modal fade" id="modalMilitaryHardware" tabindex="-1" role="dialog"
-                aria-labelledby="modalMilitaryHardwareLabel" aria-hidden="true">
+            <!-- Modal for "ATM Simulation (2023)" -->
+            <div class="modal fade" id="modalATMSimulation" tabindex="-1" role="dialog"
+                aria-labelledby="modalATMSimulationLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content" style="background-color: #1f2833">
                         <div class="modal-header">
-                            <h5 class="modal-title text-light" id="modalMilitaryHardwareLabel">
-                                Military Hardware Enthusiast
+                            <h5 class="modal-title text-light" id="modalATMSimulationLabel">
+                                ATM Simulation (2023)
                             </h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
@@ -226,13 +247,101 @@
                         </div>
                         <div class="modal-body text-light">
                             <p>
-                                write here
+                                <strong>ATM Simulation</strong> is a practical program developed in C++ that replicates
+                                the core functionalities of an automated teller machine (ATM).
+                                The program leverages a flash drive to simulate the role of an ATM card, providing a
+                                unique and innovative approach to ATM operations.
+                                Users can perform essential banking transactions, including withdrawing, depositing, and
+                                transferring funds, offering a realistic and secure ATM experience.
+                            </p>
+                            <p>
+                                Designed as part of a group project for the Data Structures and Algorithms course, this
+                                program showcases the application of advanced programming techniques
+                                such as file handling, data structures, and modular code organization. The simulation
+                                incorporates secure data processing and interactive user
+                                prompts to ensure a user-friendly interface while adhering to real-world ATM processes.
+                            </p>
+                            <p>
+                                This project highlights the team's technical expertise, problem-solving capabilities,
+                                and ability to develop practical solutions to simulate complex systems.
+                                It is an excellent example of bridging classroom learning with real-world applications.
+                            </p>
+                            <p>
+                                Repository:
+                                <a href="https://github.com/tidgeeyyy/atm_simulation" target="_blank"
+                                    style="color: #66FCF1;">https://github.com/tidgeeyyy/atm_simulation</a>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
 
+
+            <!-- Text Compressor and Decompressor (2023) -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow border-0 hover-zoom">
+                    <img src="assets/projects/proj3.jpg" class="card-img-top" alt="Text Compressor and Decompressor" />
+                    <div class="card-body" style="background-color: #1f2833">
+                        <h5 class="card-title font-weight-bold">
+                            Text Compressor and Decompressor (2023)
+                        </h5>
+                        <button class="btn btn-outline-info btn-sm" data-toggle="modal"
+                            data-target="#modalTextCompressor">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal for "Text Compressor and Decompressor (2023)" -->
+            <div class="modal fade" id="modalTextCompressor" tabindex="-1" role="dialog"
+                aria-labelledby="modalTextCompressorLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content" style="background-color: #1f2833">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-light" id="modalTextCompressorLabel">
+                                Text Compressor and Decompressor (2023)
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-light">
+                            <p>
+                                <strong>Text Compressor and Decompressor</strong> is a project that utilizes Huffman
+                                coding to compress and decompress text files.
+                                Huffman coding is an efficient algorithm that encodes characters based on their
+                                frequency of occurrence, significantly reducing file sizes
+                                without losing any data. This feature is particularly useful for optimizing storage and
+                                improving data transmission efficiency.
+                            </p>
+                            <p>
+                                Developed in C++, the program consists of two main functionalities: a compressor that
+                                converts the input text into a compact binary format,
+                                and a decompressor that accurately reconstructs the original text from the compressed
+                                data. The program employs advanced data structures
+                                such as priority queues and binary trees, showcasing the practical application of
+                                algorithmic concepts taught in the course.
+                            </p>
+                            <p>
+                                This project was submitted as part of a group assignment for the Data Structures and
+                                Algorithms course, reflecting the team’s ability to solve
+                                real-world problems by leveraging theoretical knowledge. It also serves as a
+                                demonstration of the versatility and efficiency of Huffman coding in
+                                practical applications.
+                            </p>
+                            <p>
+                                Repository:
+                                <a href="https://github.com/tidgeeyyy/text_compressor_and_decompressor" target="_blank"
+                                    style="color: #66FCF1;">https://github.com/tidgeeyyy/text_compressor_and_
+                                    decompressor</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <!-- Contact Me Section -->
@@ -240,18 +349,18 @@
         <h2 class="text-center font-weight-bold mb-4">Contact Me</h2>
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <form id="contactForm" action="mailto:thomasjoseph.almorin@edu.tup.com" method="POST"
+                <form id="contactForm" action="mailto:thomasjoseph.almorin@edu.tup.ph" method="POST"
                     enctype="multipart/form-data">
                     <div class="form-group">
-                        <label for="name">Your Name</label>
+                        <label for="name">Username</label>
                         <input type="text" class="form-control" id="name" name="name" required />
                     </div>
                     <div class="form-group">
-                        <label for="email">Your Email</label>
+                        <label for="email">Email</label>
                         <input type="email" class="form-control" id="email" name="email" required />
                     </div>
                     <div class="form-group">
-                        <label for="message">Your Message</label>
+                        <label for="message">Message</label>
                         <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                     </div>
                     <div class="form-group d-flex justify-content-between">
@@ -267,15 +376,27 @@
         </div>
     </section>
 
+    <!-- Social Media Icons Section -->
+    <div id="social-icons" class="text-center">
+        <a href="https://github.com/tidgeeyyy" target="_blank" class="social-icon">
+            <img src="assets/link-icons/github-icon.png" alt="GitHub" />
+        </a>
+        <a href="https://www.facebook.com/teejayyy.ya/" target="_blank" class="social-icon">
+            <img src="assets/link-icons/facebook-icon.png" alt="Facebook" />
+        </a>
+    </div>
+
     <!-- Footer Section -->
     <footer class="bg-dark text-light text-center py-3">
-        <p>&copy; 2024 Thomas Joseph. All rights reserved.</p>
+        <p>&copy; 2024 Thomas Joseph Almorin. All rights reserved.</p>
     </footer>
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
