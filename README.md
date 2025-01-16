@@ -1,36 +1,17 @@
-# Thomas' Portfolio Website
+# Quiz Application
 
-This repository contains the code for Thomas' Portfolio Website, which showcases various projects, skills, and education. It is designed using HTML, CSS, and Bootstrap with JavaScript integrations for modal and interactive features.
+This is a simple multiple-choice quiz application built with HTML, CSS, and JavaScript. It dynamically loads questions, tracks scores, and displays results. The app features a responsive design and custom styles for an engaging user experience.
 
-## Features
-- **Navbar**: A fixed-top navigation bar that links to various sections of the portfolio such as Introduction, Skills, Projects, and Contact.
-- **Introduction**: An introduction section containing personal information, a profile picture with a modal view, and objectives.
-- **Skills**: A section displaying the programming languages and tools Thomas uses, categorized by skill level.
-- **Projects**: A showcase of projects such as "Word By Word" and "ATM Simulation" with modals for additional information.
-- **Contact**: A section to display contact information.
+## Key Features
+- **Dynamic Question Loading**: Questions and options are dynamically loaded from a predefined set using JavaScript.
+- **Score Tracking**: The application tracks the user's score throughout the quiz and displays the final score at the end.
+- **Responsive Design**: The app adjusts its layout for different screen sizes, providing a user-friendly interface on both desktop and mobile devices.
+- **Custom Styles**: The design is customized with CSS to make the app visually appealing and easy to use.
 
 ## Technologies Used
-- **HTML5**: Structuring the website content.
-- **CSS3**: Styling the website to ensure it looks visually appealing.
-- **Bootstrap 4.5**: For responsive design and UI components like modals and navbar.
-- **JavaScript**: To manage modal interactions for project details.
-- **FontAwesome**: To add icons in the navigation bar and other sections.
-- **Google Fonts**: To add a clean, modern font (Montserrat).
+- **HTML**
+- **CSS**
+- **JavaScript**: 
 
-## Project Setup
 
-### Prerequisites
-- A web browser to view the portfolio.
-- The required assets, such as images and logos, stored in the `assets/` directory.
 
-### Installation
-1. Clone this repository to your local machine:
-   ```bash
-   git clone https://github.com/your-username/portfolio-website.git
-
-2. Open the index.html file in a web browser to view the portfolio.
-File Structure
-- index.html: Main HTML file containing the structure of the portfolio.
-- styles.css: Custom CSS for styling the website.
-- assets/: Folder containing images, icons, and project screenshots.
-- README.md: This file.
